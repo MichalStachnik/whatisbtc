@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Static pages -->
+  <url>
+    <loc>https://whatisbtc.io/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Track: Bitcoin Basics -->
+  <url>
+    <loc>https://whatisbtc.io/tracks/bitcoin-basics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/bitcoin-basics/history-of-money</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/bitcoin-basics/problems-with-modern-money</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/bitcoin-basics/what-is-bitcoin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/bitcoin-basics/bitcoin-vs-crypto</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Track: The Technology -->
+  <url>
+    <loc>https://whatisbtc.io/tracks/the-technology</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/the-technology/hash-functions</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/the-technology/what-is-blockchain</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/the-technology/proof-of-work</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/the-technology/nodes-network</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Track: Using Bitcoin -->
+  <url>
+    <loc>https://whatisbtc.io/tracks/using-bitcoin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/using-bitcoin/private-keys</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/using-bitcoin/types-of-wallets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/using-bitcoin/how-transactions-work</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Track: History & Economics -->
+  <url>
+    <loc>https://whatisbtc.io/tracks/history-economics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/history-economics/satoshi-and-genesis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/history-economics/bitcoin-milestones</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/history-economics/austrian-economics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Track: Lightning Network -->
+  <url>
+    <loc>https://whatisbtc.io/tracks/lightning-network</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/lightning-network/the-scaling-problem</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/lightning-network/payment-channels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/lightning-network/routing-and-the-network</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/lightning-network/lightning-wallets-invoices</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Track: Bitcoin Upgrades -->
+  <url>
+    <loc>https://whatisbtc.io/tracks/bitcoin-upgrades</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/bitcoin-upgrades/segwit</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/bitcoin-upgrades/taproot-schnorr</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://whatisbtc.io/tracks/bitcoin-upgrades/bips-and-soft-forks</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

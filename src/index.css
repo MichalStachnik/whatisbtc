@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 96%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 96%;
+
+    /* Bitcoin orange */
+    --primary: 33 93% 54%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 96%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 96%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 17%;
+    --input: 0 0% 17%;
+    --ring: 33 93% 54%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .text-gradient-orange {
+    background: linear-gradient(135deg, #F7931A 0%, #FFC26D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gradient-orange {
+    border-image: linear-gradient(135deg, #F7931A, #FFC26D) 1;
+  }
+
+  .glow-orange {
+    box-shadow: 0 0 20px #F7931A33, 0 0 40px #F7931A1A;
+  }
+
+  .glow-orange-strong {
+    box-shadow: 0 0 30px #F7931A55, 0 0 60px #F7931A22;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:border-btc-orange/40 hover:shadow-lg;
+  }
+
+  .prose-bitcoin {
+    @apply text-foreground max-w-none;
+  }
+
+  .prose-bitcoin h1 {
+    @apply text-3xl font-bold text-foreground mb-4;
+  }
+
+  .prose-bitcoin h2 {
+    @apply text-2xl font-semibold text-foreground mb-3 mt-8;
+  }
+
+  .prose-bitcoin h3 {
+    @apply text-xl font-semibold text-foreground mb-2 mt-6;
+  }
+
+  .prose-bitcoin p {
+    @apply text-muted-foreground leading-relaxed mb-4;
+  }
+
+  .prose-bitcoin ul {
+    @apply list-disc list-inside space-y-2 mb-4 text-muted-foreground;
+  }
+
+  .prose-bitcoin ol {
+    @apply list-decimal list-inside space-y-2 mb-4 text-muted-foreground;
+  }
+
+  .prose-bitcoin strong {
+    @apply text-foreground font-semibold;
+  }
+
+  .prose-bitcoin code {
+    @apply bg-muted text-btc-orange font-mono text-sm px-1.5 py-0.5 rounded;
+  }
+
+  .prose-bitcoin blockquote {
+    @apply border-l-4 border-btc-orange pl-4 italic text-muted-foreground my-4;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F7931A66;
+}
