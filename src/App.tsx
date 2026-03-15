@@ -8,6 +8,7 @@ const LessonPage = lazy(() => import('@/pages/LessonPage'));
 const DashboardPage = lazy(() => import('@/pages/DashboardPage'));
 const DonatePage = lazy(() => import('@/pages/DonatePage'));
 const NetworkStatsPage = lazy(() => import('@/pages/NetworkStatsPage'));
+const GamePage = lazy(() => import('@/pages/GamePage'));
 
 function PageLoader() {
   return (
@@ -28,6 +29,7 @@ export function AppRoutes() {
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/donate" element={<DonatePage />} />
         <Route path="/network" element={<NetworkStatsPage />} />
+        <Route path="/game" element={<GamePage />} />
         <Route path="*" element={
           <div className="min-h-screen flex items-center justify-center bg-background text-center px-4">
             <div className="space-y-4">

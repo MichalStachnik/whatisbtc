@@ -1,5 +1,5 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Bitcoin, BookOpen, LayoutDashboard, Menu, X, Activity } from 'lucide-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Bitcoin, BookOpen, LayoutDashboard, Menu, X, Activity, Gamepad2 } from 'lucide-react';
 import { useState } from 'react';
 import { useProgressStore } from '@/store/useProgressStore';
 import { getLevelInfo } from '@/lib/xp';
@@ -8,10 +8,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export function Navbar() {
   const location = useLocation();
+  const navigate = useNavigate();
   const { totalXP } = useProgressStore();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const levelInfo = getLevelInfo(totalXP);
+
+  // Hide navbar in game mode (game has its own HUD)
+  if (location.pathname === '/game') return null;
 
   const navLinks = [
     { to: '/tracks', label: 'Tracks', icon: BookOpen },
@@ -51,6 +55,19 @@ export function Navbar() {
               {label}
             </Link>
           ))}
+
+          {/* Game Mode button */}
+          <button
+            onClick={() => navigate('/game')}
+            className={cn(
+              'flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-medium transition-all border',
+              'border-btc-orange/60 text-btc-orange bg-btc-orange/5',
+              'hover:bg-btc-orange hover:text-black hover:shadow-[0_0_12px_#F7931A55]'
+            )}
+          >
+            <Gamepad2 className="w-4 h-4" />
+            Game Mode
+          </button>
         </nav>
 
         {/* XP display */}
@@ -96,6 +113,14 @@ export function Navbar() {
                   {label}
                 </Link>
               ))}
+              {/* Game Mode mobile link */}
+              <button
+                onClick={() => { setMobileOpen(false); navigate('/game'); }}
+                className="flex w-full items-center gap-2 px-3 py-2 rounded-md text-sm font-medium border border-btc-orange/50 text-btc-orange hover:bg-btc-orange/10 transition-colors"
+              >
+                <Gamepad2 className="w-4 h-4" />
+                Game Mode
+              </button>
               <div className="pt-2 border-t border-border">
                 <div className="px-3 py-2 text-sm">
                   <span className="text-muted-foreground">{levelInfo.label} · </span>
