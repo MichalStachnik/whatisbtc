@@ -396,7 +396,7 @@ export class PracticalDojo extends Phaser.Scene {
   // ── TERMINALS ──────────────────────────────────────────
 
   createTerminals() {
-    TRACK3_LESSONS.forEach((lesson, i) => {
+    TRACK3_LESSONS.forEach((_, i) => {
       const [col, row] = TERMINALS[i];
       const px = col * TILE; const py = row * TILE;
 

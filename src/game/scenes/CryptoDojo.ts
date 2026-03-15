@@ -367,7 +367,7 @@ export class CryptoDojo extends Phaser.Scene {
   // ── TERMINALS ──────────────────────────────────────────
 
   createTerminals() {
-    TRACK2_LESSONS.forEach((lesson, i) => {
+    TRACK2_LESSONS.forEach((_, i) => {
       const [col, row] = TERMINALS[i];
       const px = col * TILE; const py = row * TILE;
 
