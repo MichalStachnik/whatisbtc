@@ -6,7 +6,7 @@ import * as THREE from 'three';
 export function BitcoinCoin() {
   const groupRef = useRef<THREE.Group>(null!);
 
-  useFrame((state) => {
+  useFrame(() => {
     if (groupRef.current) {
       groupRef.current.rotation.y += 0.004;
     }
