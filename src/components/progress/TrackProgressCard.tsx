@@ -41,7 +41,7 @@ interface TrackProgressCardProps {
   index?: number;
 }
 
-export function TrackProgressCard({ track, index = 0 }: TrackProgressCardProps) {
+export function TrackProgressCard({ track }: TrackProgressCardProps) {
   const { completedLessonIds } = useProgressStore();
   const allLessons = getAllLessonsForTrack(track);
   const completedCount = allLessons.filter(l => completedLessonIds.includes(l.id)).length;
